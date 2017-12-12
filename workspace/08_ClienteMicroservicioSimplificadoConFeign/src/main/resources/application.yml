@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: cliente
+
+server:
+  port: 8092
+
+#holamundo:
+  #ribbon:
+    #listOfServers: http://localhost:8080
+    
+    #DeploymentContextBasedVipAddresses: holamundo
+    #NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
+    #ServerListRefreshInterval: 30000
+
+#spring:
+#  application:
+#    name: user-service
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8084/eureka/
+  #instance:
+  #  leaseRenewalIntervalInSeconds: 10
+  #  metadataMap:
+  #    instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}

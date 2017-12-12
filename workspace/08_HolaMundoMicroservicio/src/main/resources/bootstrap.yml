@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: holamundo
+#  cloud:
+#    config:
+#      enabled: true
+#      uri: http://localhost:9080
+#      failFast: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8084/eureka/
+
+server:
+  port: 8088
+  
+log:
+  level:
+    com.ejemplo.arquitectura.cloud: ERROR

@@ -1,0 +1,11 @@
+server:
+  port: 8100
+
+spring:
+  application:
+    name: cliente-circuit-breaker
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8084/eureka/
