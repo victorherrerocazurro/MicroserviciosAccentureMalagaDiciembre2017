@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 82
 
 eureka:
   client:
@@ -7,6 +7,8 @@ eureka:
       defaultZone: http://localhost:8084/eureka/
   
 zuul:
+  ignored-services:
+    cliente-circuit-breaker
   routes:
     cliente:
       path: /cliente/**
